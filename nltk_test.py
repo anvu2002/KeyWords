@@ -38,7 +38,6 @@ def filter_keywords(file: str) -> str:
     # Extract Keywords per tokens
     for sentence in sentences:
         words = word_tokenize(sentence)
-        breakpoint()
         filtered_sentence = [word for word in words if word.lower() not in stop_words]
         filtered_sentences.append(filtered_sentence)
 
